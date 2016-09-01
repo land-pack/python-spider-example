@@ -64,7 +64,7 @@ post_data = {
 ##  'machineNet':'',
 ##    'machineCpu':'',
 ##  'machineDisk':'', 
-    str(clrName):str(clrValue),
+    str(clrName):str(clrValue),# taken
     'uuid': uuid,
     'authcode': ''
 }

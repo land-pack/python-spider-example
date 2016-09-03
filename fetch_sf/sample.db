@@ -1,0 +1,77 @@
+data={
+
+    "id": "606721866344",
+    "origin": "深圳市",
+    "originOld": "深圳市",
+    "originCode": "755BG",
+    "destination": "深圳市",
+    "destinationOld": "深圳市",
+    "receiveBillFlg": null,
+    "delivered": true,
+    "expectedDeliveryTime": null,
+    "expectedDeliveryTimeEnd": null,
+    "recipientTime": "2016-08-24 19:40:25",
+    "refundable": false,
+    "limitTypeCode": "T801",
+    "limitTypeName": "顺丰次晨",
+    "mainlandToMainland": true,
+    "routes": [
+        {
+            "scanDateTime": "2016-08-24 19:40:25",
+            "remark": "顺丰速运 已收取快件",
+            "stayWhyCode": ""
+        },
+        {
+            "scanDateTime": "2016-08-24 22:32:18",
+            "remark": "快件在<a style='color:red;text-decoration:none;' href='javascript:void(0)' link-type='store-point' store-type='1' virtual-address-code='755BG' terminal-code='755BG' terminal-type='1'><font color='red'>【深圳宝安创业路营业部】</font></a>已装车，准备发往下一站",
+            "stayWhyCode": ""
+        },
+        {
+            "scanDateTime": "2016-08-25 00:39:26",
+            "remark": "快件到达 【深圳黄田集散中心】",
+            "stayWhyCode": ""
+        },
+        {
+            "scanDateTime": "2016-08-25 01:54:37",
+            "remark": "快件在【深圳黄田集散中心】已装车，准备发往 【深圳五和集散中心】",
+            "stayWhyCode": ""
+        },
+        {
+            "scanDateTime": "2016-08-25 02:50:21",
+            "remark": "快件到达 【深圳五和集散中心】",
+            "stayWhyCode": ""
+        },
+        {
+            "scanDateTime": "2016-08-25 03:45:29",
+            "remark": "快件在【深圳五和集散中心】已装车，准备发往 <a style='color:red;text-decoration:none;' href='javascript:void(0)' link-type='store-point' store-type='1' virtual-address-code='755EV' terminal-code='755EV' terminal-type='1'><font color='red'>【深圳龙岗爱联陂头背村营业部】</font></a>",
+            "stayWhyCode": "8"
+        },
+        {
+            "scanDateTime": "2016-08-25 07:42:30",
+            "remark": "快件到达 <a style='color:red;text-decoration:none;' href='javascript:void(0)' link-type='store-point' store-type='1' virtual-address-code='755EV' terminal-code='755EV' terminal-type='1'><font color='red'>【深圳龙岗爱联陂头背村营业部】</font></a>",
+            "stayWhyCode": ""
+        },
+        {
+            "scanDateTime": "2016-08-25 08:05:19",
+            "remark": "正在派送途中<br/>(派件人:杨文帅,<span id=\"opr_phone\">电话:</span>18576673196)",
+            "stayWhyCode": ""
+        },
+        {
+            "scanDateTime": "2016-08-25 11:59:47",
+            "remark": "已签收,感谢使用顺丰,期待再次为您服务",
+            "stayWhyCode": ""
+        }
+    ],
+    "prioritized": false,
+    "warehouse": false,
+    "signed": true,
+    "expressState": "",
+    "lstElementHtml": null,
+    "childSet": [ ],
+    "showThermometer": false,
+    "productCode": "SE0003",
+    "productName": "顺丰次晨",
+    "billFlag": "1",
+    "weight": "1.000"
+
+}

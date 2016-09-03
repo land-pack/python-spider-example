@@ -25,7 +25,8 @@ class ApiHandler(web.RequestHandler):
 		for order in orders:
 			user_id = order.get('user_id')
 			order_id = order.get('order_id')
-			db.order_info.save({'user_id':user_id,'order_id':order_id,'finish':0})
+			channel = order.get('channel')
+			db.order_info.save({'user_id':user_id,'order_id':order_id,'finish':0,'channel':channel})
 		self.write("{'status':'ok'}")
 
 

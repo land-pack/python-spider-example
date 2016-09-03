@@ -1,0 +1,3 @@
+#crontab -e
+# Run send new task every hour ~~
+* */1 * * * /home/frank/500.com/sf/main.py

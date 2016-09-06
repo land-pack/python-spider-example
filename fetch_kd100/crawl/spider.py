@@ -9,7 +9,7 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 from utils import to_cookies
 
 cwd = os.getcwd()
-js_path = '~/your-js-path/js'
+js_path = '/home/frank/500.com/kd100/crawl/js'
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 
 
@@ -52,11 +52,18 @@ def check_logistics_info(cb, timestamp,cookies, nu, com):
 	url = url.format(cb=cb, nu=nu, timestamp=timestamp, com=com)
 	req = requests.get(url, headers=headers, verify=False)
 	if req.status_code == 200:
-		return ujson.loads(req.content.split("(")[1][:-1])
+		try:
+			ret = req.content.split("(")[1][:-1]
+			return ujson.loads(ret)
+		except:
+			ret = req.content.split("({")[1].split('}]')[0]
+			ret = '{'+ret+'}]}}}'
+			ret = ujson.loads(ret)
+			return ret
 	else:
 		return {"status":"failure"}
 
-def get_logistics_info(order_id, channel):
+def get_logistics(order_id, channel):
 	baidu_session = get_baidu_header()
 	cb = baidu_session.get("cb")
 	timestamp = baidu_session.get("timestamp")
@@ -67,6 +74,6 @@ def get_logistics_info(order_id, channel):
 if __name__ == "__main__":
 	nu = "22308677667"
 	com = "jd"
-	info = get_logistics_info(nu,com)
+	info = get_logistics(nu,com)
 	print '*'*100
 	print info.get('data')

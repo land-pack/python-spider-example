@@ -59,6 +59,15 @@ def quick_update(result, order_id):
 	update_item['state']=state
 	update_item['context']=context
 	update(update_item)
+
+def query(order_id):
+	db = mc.kd_db
+	result = db.order_info.find({'order_id':order_id},{'_id':0})
+	if result is not None:
+		tmp_list = [ c for c in result]
+		return str(tmp_list)
+	else:
+		return str({'status':'empty'})
 	
 if __name__ == '__main__':
 	push('123456','22308677667','sf')

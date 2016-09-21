@@ -39,6 +39,22 @@ sudo dnf install freetype
 sudo dnf install fontconfig
 ```
 
+###Install Mongodb
+---
+
+Install Mongodb very easy, just one command!
+```
+sudo apt-get install mongo*	# For Ubuntu
+
+# or
+sudo dnf install mongo*	# For Fedora 
+```
+Run the follow command to run mongo server
+
+```
+mkdir sample_db
+mongod --dbpath=sample_db --smallfiles
+```
 ###Install Python package
 ----
 

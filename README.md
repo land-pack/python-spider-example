@@ -15,7 +15,7 @@ sudo apt-get install phantomjs
 
 Download the package from phantomjs home.
 
-# https://phantomjs.org/download.html
+[Download Pantomjs](https://phantomjs.org/download.html)
 
 And then try the below command!
 
